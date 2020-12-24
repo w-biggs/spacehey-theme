@@ -10,6 +10,7 @@
   animation: shooting-star 40s infinite linear;
   will-change: transform;
   padding: 0px 10px;
+  z-index: -1;
 }
 
 @media screen and (max-width: 800px) {

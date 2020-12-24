@@ -90,7 +90,7 @@ body {
   width: 96px;
   height: 96px;
   image-rendering: crisp-edges;
-  z-index: -1;
+  z-index: -2;
 }
 
 /* Stars */
@@ -99,7 +99,7 @@ body {
   height: 24px;
   position: fixed;
   image-rendering: crisp-edges;
-  z-index: -2;
+  z-index: -3;
   overflow: hidden;
 }
 .star-small::before, .star-medium::before, .star-large::before {
@@ -123,20 +123,20 @@ body {
   0% {
     transform: translateX(0);
   }
-  12.6% {
+  15.9% {
     transform: translateX(-24px);
   }
-  43.7% {
+  42.5% {
     transform: translateX(0px);
   }
-  64.8% {
+  70.1% {
     transform: translateX(-24px);
   }
 }
 .star-medium::before {
   background-image: url("https://i.imgur.com/fM1biij.png");
   animation: star-medium 9s infinite step-end;
-  animation-delay: -2.8s;
+  animation-delay: -1.8s;
   width: 300%;
 }
 
@@ -144,432 +144,432 @@ body {
   0% {
     transform: translateX(0);
   }
-  9.7% {
+  19.5% {
     transform: translateX(-24px);
   }
-  22.9% {
-    transform: translateX(0px);
-  }
-  37.7% {
-    transform: translateX(-24px);
-  }
-  60% {
+  34.3% {
     transform: translateX(-48px);
   }
-  71.1% {
+  36.6% {
     transform: translateX(-24px);
   }
-  89.3% {
+  52.8% {
+    transform: translateX(-48px);
+  }
+  74.5% {
+    transform: translateX(-24px);
+  }
+  79.7% {
     transform: translateX(-48px);
   }
 }
 .star-large::before {
   background-image: url("https://i.imgur.com/fM1biij.png");
   animation: star-large 9s infinite step-end;
-  animation-delay: -8.4s;
+  animation-delay: -5.1s;
   width: 300%;
 }
 
 .star-large-offset {
-  animation-delay: -5.4s;
+  animation-delay: -5.1s;
 }
 
 @keyframes star-large {
   0% {
     transform: translateX(0);
   }
-  14.1% {
+  15.2% {
     transform: translateX(-24px);
   }
-  21.6% {
+  34.1% {
     transform: translateX(0px);
   }
-  42.5% {
+  46.3% {
     transform: translateX(-24px);
   }
-  58.3% {
+  55.4% {
     transform: translateX(-48px);
   }
-  75% {
+  68.4% {
     transform: translateX(-24px);
   }
-  90.2% {
-    transform: translateX(-48px);
+  86.9% {
+    transform: translateX(0px);
   }
 }
 .star-small:nth-of-type(1) {
-  top: 5vh;
-  left: 27vw;
-}
-
-.star-medium:nth-of-type(1) {
-  top: 36vh;
+  top: 62vh;
   left: 71vw;
 }
 
+.star-medium:nth-of-type(1) {
+  top: 44vh;
+  left: 69vw;
+}
+
 .star-large:nth-of-type(1) {
-  top: 99vh;
-  left: 64vw;
+  top: 77vh;
+  left: 2vw;
 }
 
 .star-small:nth-of-type(2) {
-  top: 56vh;
-  left: 44vw;
+  top: 4vh;
+  left: 15vw;
 }
 
 .star-medium:nth-of-type(2) {
-  top: 100vh;
-  left: 1vw;
+  top: 42vh;
+  left: 14vw;
 }
 
 .star-large:nth-of-type(2) {
-  top: 85vh;
-  left: 93vw;
+  top: 33vh;
+  left: 94vw;
 }
 
 .star-small:nth-of-type(3) {
-  top: 34vh;
-  left: 30vw;
+  top: 9vh;
+  left: 44vw;
 }
 
 .star-medium:nth-of-type(3) {
-  top: 35vh;
-  left: 22vw;
+  top: 60vh;
+  left: 66vw;
 }
 
 .star-large:nth-of-type(3) {
-  top: 89vh;
-  left: 82vw;
+  top: 19vh;
+  left: 68vw;
 }
 
 .star-small:nth-of-type(4) {
-  top: 11vh;
-  left: 80vw;
+  top: 78vh;
+  left: 65vw;
 }
 
 .star-medium:nth-of-type(4) {
   top: 49vh;
-  left: 2vw;
+  left: 56vw;
 }
 
 .star-large:nth-of-type(4) {
-  top: 34vh;
-  left: 36vw;
+  top: 64vh;
+  left: 15vw;
 }
 
 .star-small:nth-of-type(5) {
-  top: 81vh;
-  left: 69vw;
+  top: 29vh;
+  left: 8vw;
 }
 
 .star-medium:nth-of-type(5) {
-  top: 28vh;
-  left: 73vw;
+  top: 13vh;
+  left: 1vw;
 }
 
 .star-large:nth-of-type(5) {
-  top: 21vh;
-  left: 71vw;
+  top: 33vh;
+  left: 32vw;
 }
 
 .star-small:nth-of-type(6) {
-  top: 96vh;
-  left: 88vw;
+  top: 19vh;
+  left: 78vw;
 }
 
 .star-medium:nth-of-type(6) {
-  top: 80vh;
-  left: 59vw;
+  top: 48vh;
+  left: 87vw;
 }
 
 .star-large:nth-of-type(6) {
-  top: 96vh;
+  top: 16vh;
   left: 19vw;
 }
 
 .star-small:nth-of-type(7) {
-  top: 31vh;
-  left: 96vw;
-}
-
-.star-medium:nth-of-type(7) {
-  top: 100vh;
-  left: 97vw;
-}
-
-.star-large:nth-of-type(7) {
-  top: 45vh;
-  left: 90vw;
-}
-
-.star-small:nth-of-type(8) {
-  top: 71vh;
-  left: 75vw;
-}
-
-.star-medium:nth-of-type(8) {
-  top: 77vh;
-  left: 72vw;
-}
-
-.star-large:nth-of-type(8) {
-  top: 10vh;
+  top: 58vh;
   left: 49vw;
 }
 
-.star-small:nth-of-type(9) {
-  top: 94vh;
-  left: 76vw;
+.star-medium:nth-of-type(7) {
+  top: 18vh;
+  left: 61vw;
 }
 
-.star-medium:nth-of-type(9) {
-  top: 71vh;
+.star-large:nth-of-type(7) {
+  top: 93vh;
   left: 30vw;
 }
 
-.star-large:nth-of-type(9) {
-  top: 92vh;
-  left: 76vw;
+.star-small:nth-of-type(8) {
+  top: 32vh;
+  left: 98vw;
 }
 
-.star-small:nth-of-type(10) {
-  top: 7vh;
-  left: 65vw;
+.star-medium:nth-of-type(8) {
+  top: 59vh;
+  left: 77vw;
 }
 
-.star-medium:nth-of-type(10) {
-  top: 55vh;
-  left: 79vw;
-}
-
-.star-large:nth-of-type(10) {
-  top: 50vh;
-  left: 87vw;
-}
-
-.star-small:nth-of-type(11) {
-  top: 28vh;
-  left: 88vw;
-}
-
-.star-medium:nth-of-type(11) {
-  top: 96vh;
-  left: 39vw;
-}
-
-.star-large:nth-of-type(11) {
-  top: 67vh;
-  left: 21vw;
-}
-
-.star-small:nth-of-type(12) {
-  top: 92vh;
-  left: 92vw;
-}
-
-.star-medium:nth-of-type(12) {
-  top: 5vh;
-  left: 39vw;
-}
-
-.star-large:nth-of-type(12) {
-  top: 87vh;
-  left: 60vw;
-}
-
-.star-small:nth-of-type(13) {
-  top: 11vh;
-  left: 69vw;
-}
-
-.star-medium:nth-of-type(13) {
-  top: 80vh;
-  left: 59vw;
-}
-
-.star-large:nth-of-type(13) {
-  top: 21vh;
+.star-large:nth-of-type(8) {
+  top: 77vh;
   left: 12vw;
 }
 
+.star-small:nth-of-type(9) {
+  top: 76vh;
+  left: 51vw;
+}
+
+.star-medium:nth-of-type(9) {
+  top: 97vh;
+  left: 49vw;
+}
+
+.star-large:nth-of-type(9) {
+  top: 94vh;
+  left: 51vw;
+}
+
+.star-small:nth-of-type(10) {
+  top: 18vh;
+  left: 13vw;
+}
+
+.star-medium:nth-of-type(10) {
+  top: 58vh;
+  left: 87vw;
+}
+
+.star-large:nth-of-type(10) {
+  top: 49vh;
+  left: 36vw;
+}
+
+.star-small:nth-of-type(11) {
+  top: 15vh;
+  left: 62vw;
+}
+
+.star-medium:nth-of-type(11) {
+  top: 6vh;
+  left: 21vw;
+}
+
+.star-large:nth-of-type(11) {
+  top: 61vh;
+  left: 71vw;
+}
+
+.star-small:nth-of-type(12) {
+  top: 63vh;
+  left: 46vw;
+}
+
+.star-medium:nth-of-type(12) {
+  top: 1vh;
+  left: 13vw;
+}
+
+.star-large:nth-of-type(12) {
+  top: 24vh;
+  left: 25vw;
+}
+
+.star-small:nth-of-type(13) {
+  top: 39vh;
+  left: 45vw;
+}
+
+.star-medium:nth-of-type(13) {
+  top: 28vh;
+  left: 42vw;
+}
+
+.star-large:nth-of-type(13) {
+  top: 17vh;
+  left: 18vw;
+}
+
 .star-small:nth-of-type(14) {
-  top: 8vh;
-  left: 59vw;
+  top: 4vh;
+  left: 2vw;
 }
 
 .star-medium:nth-of-type(14) {
-  top: 39vh;
-  left: 58vw;
+  top: 95vh;
+  left: 92vw;
 }
 
 .star-large:nth-of-type(14) {
   top: 29vh;
-  left: 55vw;
+  left: 58vw;
 }
 
 .star-small:nth-of-type(15) {
-  top: 51vh;
-  left: 59vw;
+  top: 46vh;
+  left: 12vw;
 }
 
 .star-medium:nth-of-type(15) {
-  top: 57vh;
-  left: 70vw;
+  top: 25vh;
+  left: 62vw;
 }
 
 .star-large:nth-of-type(15) {
-  top: 31vh;
-  left: 63vw;
+  top: 67vh;
+  left: 35vw;
 }
 
 .star-small:nth-of-type(16) {
-  top: 32vh;
-  left: 46vw;
+  top: 43vh;
+  left: 54vw;
 }
 
 .star-medium:nth-of-type(16) {
-  top: 31vh;
-  left: 10vw;
+  top: 48vh;
+  left: 50vw;
 }
 
 .star-large:nth-of-type(16) {
-  top: 17vh;
-  left: 22vw;
+  top: 31vh;
+  left: 61vw;
 }
 
 .star-small:nth-of-type(17) {
-  top: 91vh;
-  left: 67vw;
+  top: 33vh;
+  left: 9vw;
 }
 
 .star-medium:nth-of-type(17) {
-  top: 63vh;
-  left: 20vw;
+  top: 98vh;
+  left: 8vw;
 }
 
 .star-large:nth-of-type(17) {
-  top: 55vh;
-  left: 10vw;
+  top: 41vh;
+  left: 48vw;
 }
 
 .star-small:nth-of-type(18) {
-  top: 86vh;
-  left: 24vw;
+  top: 87vh;
+  left: 32vw;
 }
 
 .star-medium:nth-of-type(18) {
-  top: 8vh;
-  left: 60vw;
+  top: 71vh;
+  left: 86vw;
 }
 
 .star-large:nth-of-type(18) {
-  top: 66vh;
-  left: 96vw;
+  top: 25vh;
+  left: 53vw;
 }
 
 .star-small:nth-of-type(19) {
-  top: 67vh;
-  left: 33vw;
+  top: 78vh;
+  left: 46vw;
 }
 
 .star-medium:nth-of-type(19) {
-  top: 5vh;
-  left: 82vw;
+  top: 27vh;
+  left: 17vw;
 }
 
 .star-large:nth-of-type(19) {
-  top: 76vh;
-  left: 5vw;
+  top: 97vh;
+  left: 62vw;
 }
 
 .star-small:nth-of-type(20) {
-  top: 60vh;
-  left: 90vw;
+  top: 45vh;
+  left: 62vw;
 }
 
 .star-medium:nth-of-type(20) {
-  top: 31vh;
-  left: 63vw;
+  top: 26vh;
+  left: 3vw;
 }
 
 .star-large:nth-of-type(20) {
-  top: 55vh;
-  left: 68vw;
+  top: 35vh;
+  left: 85vw;
 }
 
 .star-small:nth-of-type(21) {
-  top: 75vh;
-  left: 41vw;
-}
-
-.star-medium:nth-of-type(21) {
-  top: 48vh;
-  left: 69vw;
-}
-
-.star-large:nth-of-type(21) {
-  top: 66vh;
-  left: 53vw;
-}
-
-.star-small:nth-of-type(22) {
-  top: 4vh;
-  left: 60vw;
-}
-
-.star-medium:nth-of-type(22) {
-  top: 13vh;
-  left: 25vw;
-}
-
-.star-large:nth-of-type(22) {
-  top: 8vh;
-  left: 53vw;
-}
-
-.star-small:nth-of-type(23) {
-  top: 93vh;
-  left: 67vw;
-}
-
-.star-medium:nth-of-type(23) {
-  top: 63vh;
+  top: 20vh;
   left: 1vw;
 }
 
+.star-medium:nth-of-type(21) {
+  top: 62vh;
+  left: 97vw;
+}
+
+.star-large:nth-of-type(21) {
+  top: 3vh;
+  left: 6vw;
+}
+
+.star-small:nth-of-type(22) {
+  top: 1vh;
+  left: 15vw;
+}
+
+.star-medium:nth-of-type(22) {
+  top: 55vh;
+  left: 4vw;
+}
+
+.star-large:nth-of-type(22) {
+  top: 59vh;
+  left: 96vw;
+}
+
+.star-small:nth-of-type(23) {
+  top: 3vh;
+  left: 38vw;
+}
+
+.star-medium:nth-of-type(23) {
+  top: 50vh;
+  left: 49vw;
+}
+
 .star-large:nth-of-type(23) {
-  top: 94vh;
-  left: 83vw;
+  top: 15vh;
+  left: 68vw;
 }
 
 .star-small:nth-of-type(24) {
-  top: 10vh;
-  left: 77vw;
+  top: 14vh;
+  left: 68vw;
 }
 
 .star-medium:nth-of-type(24) {
-  top: 38vh;
-  left: 39vw;
+  top: 1vh;
+  left: 47vw;
 }
 
 .star-large:nth-of-type(24) {
-  top: 90vh;
-  left: 7vw;
+  top: 52vh;
+  left: 93vw;
 }
 
 .star-small:nth-of-type(25) {
-  top: 46vh;
-  left: 30vw;
+  top: 30vh;
+  left: 64vw;
 }
 
 .star-medium:nth-of-type(25) {
-  top: 4vh;
-  left: 90vw;
+  top: 40vh;
+  left: 87vw;
 }
 
 .star-large:nth-of-type(25) {
-  top: 35vh;
-  left: 45vw;
+  top: 2vh;
+  left: 94vw;
 }
 
 /* Shooting star */
@@ -584,6 +584,7 @@ body {
   animation: shooting-star 40s infinite linear;
   will-change: transform;
   padding: 0px 10px;
+  z-index: -1;
 }
 
 @media screen and (max-width: 800px) {
