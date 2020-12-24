@@ -1,0 +1,49 @@
+/* Shooting star */
+#shooting-star {
+  top: 20%;
+  left: 100vw;
+  transform: rotate(-5deg) translateX(40vw);
+  position: fixed;
+  image-rendering: crisp-edges;
+  width: auto;
+  height: 3px;
+  animation: shooting-star 40s infinite linear;
+  will-change: transform;
+  padding: 0px 10px;
+}
+
+@media screen and (max-width: 800px) {
+  #shooting-star {
+    animation: shooting-star-mobile 40s infinite linear;
+  }
+}
+
+@keyframes shooting-star {
+  0% {
+    transform: rotate(-5deg) translateX(0px);
+  }
+  5% {
+    transform: rotate(-5deg) translateX(0px);
+  }
+  7.5% {
+    transform: rotate(-5deg) translateX(-140vw);
+  }
+  100% {
+    transform: rotate(-5deg) translateX(-120vw);
+  }
+}
+
+@keyframes shooting-star-mobile {
+  0% {
+    transform: rotate(-5deg) translateX(0px);
+  }
+  5% {
+    transform: rotate(-5deg) translateX(0px);
+  }
+  7.5% {
+    transform: rotate(-5deg) translateX(-1000px);
+  }
+  100% {
+    transform: rotate(-5deg) translateX(-1000px);
+  }
+}

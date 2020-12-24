@@ -1,0 +1,114 @@
+/* Stars */
+.star-small, .star-medium, .star-large {
+    width: 24px;
+    height: 24px;
+    position: fixed;
+    image-rendering: crisp-edges;
+    z-index: -2;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transform: translateX(0);
+        will-change: transform;
+        height: 100%;
+        background-size: contain;
+    }
+}
+
+.star-small::before {
+    background-image: url('https://i.imgur.com/VQJRbzZ.png');
+    animation: star-small 6s infinite step-end;
+    width: 200%;
+}
+
+$small-positions: -24px, 0px, -24px;
+
+@keyframes star-small {
+	0% { transform: translateX(0); }
+	@for $i from 1 through 3 {
+    	#{percentage((.25 * $i) + ((random(250)/1000) - .125))} {
+    	    transform: translateX(#{nth($small-positions, $i)});
+    	}
+	}
+}
+
+$medium-percents: ();
+$medium-positions: (1);
+@for $i from 1 through 6 {
+    $medium-percents: append($medium-percents, round((((1 / 7) * $i) + ((random(round(1000 / 7))/1000) - (1 / 14))) * 1000) / 1000);
+    @if nth($medium-positions, -1) == 0 or nth($medium-positions, -1) == 2 {
+        $medium-positions: append($medium-positions, 1);
+    } @else if random() < 0.5 {
+        $medium-positions: append($medium-positions, 2);
+    } @else {
+        $medium-positions: append($medium-positions, 0);
+    }
+}
+
+.star-medium::before {
+    background-image: url('https://i.imgur.com/fM1biij.png');
+    animation: star-medium 9s infinite step-end;
+    animation-delay: (random(90) / 10) * -1s;
+    width: 300%;
+}
+
+@keyframes star-medium {
+	0% { transform: translateX(0); }
+	@for $i from 1 through 6 {
+    	#{percentage(nth($medium-percents, $i))} {
+    	    transform: translateX(#{nth($medium-positions, $i) * -24px});
+    	}
+	}
+}
+
+$large-percents: ();
+$large-positions: (1);
+@for $i from 1 through 6 {
+    $large-percents: append($large-percents, round((((1 / 7) * $i) + ((random(round(1000 / 7))/1000) - (1 / 14))) * 1000) / 1000);
+    @if nth($large-positions, -1) == 0 or nth($large-positions, -1) == 2 {
+        $large-positions: append($large-positions, 1);
+    } @else if random() < 0.5 {
+        $large-positions: append($large-positions, 2);
+    } @else {
+        $large-positions: append($large-positions, 0);
+    }
+}
+
+.star-large::before {
+    background-image: url('https://i.imgur.com/fM1biij.png');
+    animation: star-large 9s infinite step-end;
+    animation-delay: (random(90) / 10) * -1s;
+    width: 300%;
+}
+
+.star-large-offset {
+    animation-delay: (random(90) / 10) * -1s;
+}
+
+@keyframes star-large {
+	0% { transform: translateX(0); }
+	@for $i from 1 through 6 {
+    	#{percentage(nth($large-percents, $i))} {
+    	    transform: translateX(#{nth($large-positions, $i) * -24px});
+    	}
+	}
+}
+
+@for $i from 1 through 25 {
+    .star-small:nth-of-type(#{$i}) {
+        top: random(100) + vh;
+        left: random(100) + vw;
+    }
+    .star-medium:nth-of-type(#{$i}) {
+        top: random(100) + vh;
+        left: random(100) + vw;
+    }
+    .star-large:nth-of-type(#{$i}) {
+        top: random(100) + vh;
+        left: random(100) + vw;
+    }
+}

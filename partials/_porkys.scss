@@ -1,0 +1,31 @@
+/* *** Porkys text *** */
+@import url("https://w-biggs.github.io/porkys.css");
+
+.porkys {
+  font-family: 'Porky\'s', sans-serif;
+  font-size: 3em;
+  text-align: center;
+  max-width: 7em;
+  margin: 0 auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: bold;
+  overflow: visible;
+  position: relative;
+
+  &::before {
+    content: attr(title);
+    position: absolute;
+    -webkit-text-stroke: 0.2em black;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &.winter {
+    background-image: url('https://i.imgur.com/mIp9lGv.gif'), repeating-linear-gradient(to right, #b4bcd9 0, #aad4d8 .333em, #cbe5b1 .666em, #e0d595 1em, #e7b99d 1.333em, #cbaba4 1.666em, #b4bcd9 2em);
+    background-position: center left;
+  }
+}
